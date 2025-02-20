@@ -14,8 +14,20 @@
             <p> - add links to icons</p>
             <p> - take "screenshots" of "projects"</p>
         </div>
-        
-        <img src="./img/john-smith-working-1920.jpg" alt="John Smith at work">
+        <!--
+        THIS METHOD DOES NOT GIVE THE RESULT I WANT.
+        NEXT TRY BACKGROUND IMAGE SO I CAN GET TEXT OVER IT
+        with this method, the image jumps instantly between sizes. 
+        this can be mitigated by containing it within a div, where
+            it will grow and shrink as the div does.
+        <img 
+            srcset="./img/john-smith-working-900.jpg 900w,
+                    ./img/john-smith-working-1200.jpg 1200w" 
+            sizes="(max-width: 1000px) 900px,
+                   1200px"
+            src="./img/john-smith-working-1200.jpg" 
+            alt="John Smith at work">
+        -->
         <h1>John Smith</h1>
         <h2>About me</h2>
         <p>
