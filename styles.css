@@ -1,3 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    border: 1px solid;
+}
+
 :root {
     --max-content-width: 1200px;
+}
+
+li {
+    list-style-type: none;
+}
+
+body {
+    --body-padding: 1rem;
+    padding-left: var(--body-padding);
+    padding-right: var(--body-padding);
+}
+
+
+
+/* HEADER */
+
+.about-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* SECTION */
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* FOOTER */
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+#phone,
+#email {
+    display: flex;
+    align-items: center;
 }
