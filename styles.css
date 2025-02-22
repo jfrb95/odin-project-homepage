@@ -24,6 +24,14 @@ main {
 
 /* HEADER */
 
+#image-h1-container {
+    position: relative;
+}
+#image-h1-container h1 {
+    position: absolute;
+    bottom: 0px;
+}
+
 img#john-working {
     width: 80vw;
     height: 60vh;
@@ -66,6 +74,16 @@ section {
 #contact-info {
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+    padding: 0.5rem 1rem;
+}
+
+#contact-info h2 {
+    align-self: center;
+}
+#contact-info .social-media-icons {
+    align-self: center;
 }
 
 #phone,
