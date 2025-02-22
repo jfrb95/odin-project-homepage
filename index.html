@@ -7,119 +7,112 @@
     <title>John Smith | Homepage</title>
 </head>
 <body>
-    <header>
-        <div id="TODO" class="text-to-remove">
-            <p><strong>TO DO:</strong></p>
-            <p> - add links to icons</p>
-            <p>CURRENTLY WORKING ON MOBILE SITE, <=500 PX</p>
-        </div>
-        <!--
-        THIS METHOD DOES NOT GIVE THE RESULT I WANT.
-        with this method, the image jumps instantly between sizes. 
-        this can be mitigated by containing it within a div, where
-            it will grow and shrink as the div does.
-        <img 
-            srcset="./img/john-smith-working-900.jpg 900w,
-                    ./img/john-smith-working-1200.jpg 1200w" 
-            sizes="(max-width: 1000px) 900px,
-                   1200px"
-            src="./img/john-smith-working-1200.jpg" 
-            alt="John Smith at work">
-        -->
-        <div id="image-wrapper">
+    <main>
+        <header>
+            <div id="TODO" class="text-to-remove">
+                <p><strong>TO DO:</strong></p>
+                <p> - add links to icons</p>
+                <p>CURRENTLY WORKING ON MOBILE SITE, <=500 PX</p>
+            </div>
+            <!--
+            THIS METHOD DOES NOT GIVE THE RESULT I WANT.
+            with this method, the image jumps instantly between sizes.
+            this can be mitigated by containing it within a div, where
+                it will grow and shrink as the div does.
+            <img
+                srcset="./img/john-smith-working-900.jpg 900w,
+                        ./img/john-smith-working-1200.jpg 1200w"
+                sizes="(max-width: 1000px) 900px,
+                       1200px"
+                src="./img/john-smith-working-1200.jpg"
+                alt="John Smith at work">
+            -->
             <!--use srcset to give option of different size images-->
-            <img src="./img/john/john-smith-working-500.jpg" alt="john at work">
-            
-        </div>
-        <h1>John Smith</h1>
-        <h2>About me</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor nulla sit amet est gravida vehicula. Vivamus dictum eros nulla, in blandit ex accumsan at. Nunc iaculis feugiat sem id ornare.
-        </p>
-        <div class="social-media-icons">
-            <img src="./img/icon/github.svg" alt="github" height="30px">
-            <img src="./img/icon/linked-in.svg" alt="linked in" height="30px">
-            <img src="./img/icon/twitter.svg" alt="x, formerly twitter" height="30px">
-        </div>
-
-    </header>
-
-    <section id="portfolio">
-        <h2>My work</h2>
-        <div id="projects-container">
-            <div class="project">
-                <img src="./img/project-screenshots/project1.jpg" alt="project screenshot">
-                <div class="project-header">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-icons">
-                        <img src="./img/icon/github.svg" alt="github" height="20px">
-                        <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
-                    </div>
-                </div>
-                <p>Short description of the project. Just a couple sentences will do.</p>
+            <img id="john-working" src="./img/john/john-smith-working-500.jpg" alt="john at work">
+        
+            <h1>John Smith</h1>
+            <h2>About me</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam porttitor nulla sit amet est gravida vehicula. Vivamus dictum eros nulla, in blandit ex accumsan at. Nunc iaculis feugiat sem id ornare.
+            </p>
+            <div class="social-media-icons">
+                <img src="./img/icon/github.svg" alt="github" height="30px">
+                <img src="./img/icon/linked-in.svg" alt="linked in" height="30px">
+                <img src="./img/icon/twitter.svg" alt="x, formerly twitter" height="30px">
             </div>
-
-            <div class="project">
-                <img src="./img/project-screenshots/project2.jpg" alt="project screenshot">
-                <div class="project-header">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-icons">
-                        <img src="./img/icon/github.svg" alt="github" height="20px">
-                        <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+        </header>
+        <section id="portfolio">
+            <h2>My work</h2>
+            <div id="projects-container">
+                <div class="project">
+                    <img src="./img/project-screenshots/project1.jpg" alt="project screenshot">
+                    <div class="project-header">
+                        <h3 class="project-title">Project name</h3>
+                        <div class="project-icons">
+                            <img src="./img/icon/github.svg" alt="github" height="20px">
+                            <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                        </div>
                     </div>
+                    <p>Short description of the project. Just a couple sentences will do.</p>
                 </div>
-                <p>Short description of the project. Just a couple sentences will do.</p>
-            </div>
-
-            <div class="project">
-                <img src="./img/project-screenshots/project3.jpg" alt="project screenshot">
-                <div class="project-header">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-icons">
-                        <img src="./img/icon/github.svg" alt="github" height="20px">
-                        <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                <div class="project">
+                    <img src="./img/project-screenshots/project2.jpg" alt="project screenshot">
+                    <div class="project-header">
+                        <h3 class="project-title">Project name</h3>
+                        <div class="project-icons">
+                            <img src="./img/icon/github.svg" alt="github" height="20px">
+                            <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                        </div>
                     </div>
+                    <p>Short description of the project. Just a couple sentences will do.</p>
                 </div>
-                <p>Short description of the project. Just a couple sentences will do.</p>
-            </div>
-
-            <div class="project">
-                <img src="./img/project-screenshots/project4.jpg" alt="project screenshot">
-                <div class="project-header">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-icons">
-                        <img src="./img/icon/github.svg" alt="github" height="20px">
-                        <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                <div class="project">
+                    <img src="./img/project-screenshots/project3.jpg" alt="project screenshot">
+                    <div class="project-header">
+                        <h3 class="project-title">Project name</h3>
+                        <div class="project-icons">
+                            <img src="./img/icon/github.svg" alt="github" height="20px">
+                            <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                        </div>
                     </div>
+                    <p>Short description of the project. Just a couple sentences will do.</p>
                 </div>
-                <p>Short description of the project. Just a couple sentences will do.</p>
-            </div>
-
-            <div class="project">
-                <img src="./img/project-screenshots/project5.jpg" alt="project screenshot">
-                <div class="project-header">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-icons">
-                        <img src="./img/icon/github.svg" alt="github" height="20px">
-                        <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                <div class="project">
+                    <img src="./img/project-screenshots/project4.jpg" alt="project screenshot">
+                    <div class="project-header">
+                        <h3 class="project-title">Project name</h3>
+                        <div class="project-icons">
+                            <img src="./img/icon/github.svg" alt="github" height="20px">
+                            <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                        </div>
                     </div>
+                    <p>Short description of the project. Just a couple sentences will do.</p>
                 </div>
-                <p>Short description of the project. Just a couple sentences will do.</p>
-            </div>
-
-            <div class="project">
-                <img src="./img/project-screenshots/project6.jpg" alt="project screenshot">
-                <div class="project-header">
-                    <h3 class="project-title">Project name</h3>
-                    <div class="project-icons">
-                        <img src="./img/icon/github.svg" alt="github" height="20px">
-                        <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                <div class="project">
+                    <img src="./img/project-screenshots/project5.jpg" alt="project screenshot">
+                    <div class="project-header">
+                        <h3 class="project-title">Project name</h3>
+                        <div class="project-icons">
+                            <img src="./img/icon/github.svg" alt="github" height="20px">
+                            <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                        </div>
                     </div>
+                    <p>Short description of the project. Just a couple sentences will do.</p>
                 </div>
-                <p>Short description of the project. Just a couple sentences will do.</p>
+                <div class="project">
+                    <img src="./img/project-screenshots/project6.jpg" alt="project screenshot">
+                    <div class="project-header">
+                        <h3 class="project-title">Project name</h3>
+                        <div class="project-icons">
+                            <img src="./img/icon/github.svg" alt="github" height="20px">
+                            <img src="./img/icon/external-link.svg" alt="open live version" height="20px">
+                        </div>
+                    </div>
+                    <p>Short description of the project. Just a couple sentences will do.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer>
         
@@ -146,7 +139,7 @@
                 <img src="./img/icon/twitter.svg" alt="x, formerly twitter" height="30px">
             </div>
         </div>
-        <img src="./img/laptop-man-2.jpg" alt="John Smith at work" height="300">
+        <img id="john-smiling" src="./img/john/john-smith-smiling-500.jpg" alt="John Smith smiling">
     </footer>
 
     <script src="script.js"></script>
