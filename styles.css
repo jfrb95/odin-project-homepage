@@ -110,7 +110,7 @@ body {
     height: 400px;
     background-color: var(--primary-color);
     position: absolute;
-    transform: translate(-100px, -200px) rotate(-30deg);
+    transform: translate(0, -200px) rotate(-30deg);
     box-shadow: var(--shadow-elevation-medium);
 }
 
@@ -158,17 +158,25 @@ header #about-me-text {
     margin-bottom: 1rem;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 500px) {
     #header-background {
         transform: translate(0, -240px) rotate(-17deg);
     }
 
-    header {
+    h1 {
+        top: -90px;
+        left: calc(-350px + 80vw);
+        width: 100vh;
     }
+    
+    header h2 {
+        text-align: center;
+    }
+
     #header-img-container {
         display: block;
-        width: calc(130px + 10vw);
-        height: 230px;
+        width: calc(135px + 10vw);
+        height: 210px;
         float: left;
     }
     header #about {
@@ -200,6 +208,11 @@ header #about-me-text {
     }
 }
 
+@media (min-width: 800px) {
+    #header-img-container {
+        
+    }
+}
 
 /* SECTION */
 
