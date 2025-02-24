@@ -239,6 +239,11 @@ footer #email p {
 #email {
     display: flex;
     align-items: center;
+    gap: 5px;
+}
+
+#phone img {
+    fill: white;
 }
 
 img#john-smiling {
