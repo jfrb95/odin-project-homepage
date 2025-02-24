@@ -209,8 +209,21 @@ header #about-me-text {
 }
 
 @media (min-width: 800px) {
+
+    /*
+    
+    CURRENTLY WORKING ON THIS!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!1
+    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    
+    
+    
+    */
     #header-img-container {
-        
+        height: 300px;
+    }
+    img#john-working {
+        height: 500px;
+        transform: translate(-30%, -10%);
     }
 }
 
