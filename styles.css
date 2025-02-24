@@ -209,6 +209,17 @@ footer {
     background-color: var(--primary-color);
 }
 
+footer h2,
+footer p {
+    color: white;
+}
+
+footer #address,
+footer #phone p,
+footer #email p {
+    font-size: 15px;
+} 
+
 #contact-info {
     display: flex;
     flex-direction: column;
