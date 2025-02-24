@@ -67,11 +67,8 @@ h3 {
 h1 {
     font-size: 64px;
     line-height: 1em;
-    padding-left: 0.5rem;
-/*
-    background-color: rgba(150, 150, 150, 0.4);
-*/
     color: white;
+    transform: translate(0.5rem, -1.5rem);
     text-shadow: 1px 5px 4px rgba(0, 0, 0, 0.5);
 }
 h2 {
@@ -96,6 +93,10 @@ li {
     cursor: pointer;
 }
 
+body {
+    min-width: 270px;
+}
+
 /* MAIN */
 
 
@@ -104,31 +105,35 @@ li {
 
 
 #header-background {
-    --max-length: max(300vh, 300vw);
-    width: var(--max-length);
-    height: var(--max-length);
+    width: 1000vw;
+    min-width: 270px;
+    height: 400px;
     background-color: var(--primary-color);
     position: absolute;
-    transform: translate(0, -280vh) rotate(-30deg);
+    transform: translate(-100px, -200px) rotate(-30deg);
     box-shadow: var(--shadow-elevation-medium);
 }
 
-#image-h1-container {
-    position: relative;
-    box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2);
-    margin-bottom: 1rem;
-}
-#image-h1-container h1 {
+h1 {
     position: absolute;
     bottom: 0rem;
 }
 
+#header-img-container {
+    position: relative;
+}
+
 
 img#john-working {
+    position: relative;
+    margin-bottom: 1rem;
     width: 85vw;
     height: 60vh;
     object-fit: cover;
     object-position: center;
+    max-width: 360px;
+    min-width: 230px;
+    box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.2);
 }
 
 header {
@@ -142,9 +147,57 @@ header {
     overflow: hidden;
 }
 
+header #about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header #about-me-text {
     margin-top: 0.5rem;
     margin-bottom: 1rem;
+}
+
+@media (min-width: 600px) {
+    #header-background {
+        transform: translate(0, -240px) rotate(-17deg);
+    }
+
+    header {
+    }
+    #header-img-container {
+        display: block;
+        width: calc(130px + 10vw);
+        height: 230px;
+        float: left;
+    }
+    header #about {
+        display: block;
+        --margin-left-right: 10%;
+        background-color: white;
+        position: relative;
+        margin-top: 7rem;
+        margin-left: var(--margin-left-right);
+        margin-right: var(--margin-left-right);
+        margin-bottom: 1rem;
+        padding: 2rem;
+        box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.2);
+    }
+
+    img#john-working {
+        height: 350px;
+        width: calc(200px + 10vw);
+        transform: translate(-30%, -40%);
+    }
+    #about-spacing-block {
+        height: 200px;
+        width: 200px;
+        display: inline-block;
+    }
+
+    header .social-media-icons {
+        float: right;
+    }
 }
 
 
